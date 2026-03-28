@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule name="Rule-Joiner-GenerateLogin" type="AttributeGenerator">
+<Description>
+Génère le login utilisateur à partir du prénom et du nom.
+Logique : initiale prénom + nom nettoyé, max 20 caractères.
+</Description>
+<ReferencedRules>
+    <Reference class="Rule" name="Rule-Library-BankSecure"/>
+</ReferencedRules>
+<Source>
+    String prenom = identity.getAttribute("firstname");
+    String nom    = identity.getAttribute("lastname");
+    String login  = genererLogin(prenom, nom);
+    return login;
+</Source>
+</Rule>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule name="Rule-Leaver-DisableAccount" type="Leaver">
+<Description>
+Désactive l'Identity lors du départ d'un employé.
+On désactive sans supprimer pour conserver l'audit trail.
+</Description>
+<Source>
+    identity.setAttribute("inactive", true);
+    return "désactivé";
+</Source>
+</Rule>
