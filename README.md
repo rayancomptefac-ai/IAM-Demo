@@ -3,8 +3,6 @@
 Projet de démonstration d'un cycle JML (Joiner/Mover/Leaver) complet 
 implémenté avec SailPoint IIQ (BeanShell/XML) et Python (Auth0 API REST).
 
-Réalisé dans le cadre d'une préparation à une alternance consultant IAM.
-
 ## Stack technique
 - SailPoint IIQ — Rules BeanShell, Workflow XML
 - Python 3 — provisioning automatisé via API REST
